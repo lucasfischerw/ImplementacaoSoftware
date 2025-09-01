@@ -1,7 +1,12 @@
 from flask import Blueprint
 
 hello_bp = Blueprint('Hello', __name__)
+name_bp = Blueprint('HelloNome', __name__)
 
 @hello_bp.route('/')
 def index():
-    return "<div style='display:grid;place-content:center;background-color:red;color:white;'><h1 style='font-weight:bold;text-align:center;'>Aprendendo FLASK :)</h1></br><img width='500' height='300' style='margin:auto;text-align:center;' src='https://revistaanamaria.com.br/wp-content/uploads/2025/01/Voce-sabe-identificar-se-seu-cachorro-esta-triste-ou-feliz_-Aprenda-750x375.jpg'></br><h1 style='text-align:center;'>CACHORRO FELIZ!!</h1>"
+    return "<div style='display:grid;place-content:center;background-color:orange;color:white;width: 100vw;height:100vh;'><h1 style='font-weight:bold;text-align:center;'>Olá mundo!</h1></br><a href='/sobre' style='background-color: white;padding: 10px;color:black;border-radius: 15px;text-align-center;'>Acessar página sobre</a>"
+
+@name_bp.route('/sobre')
+def index():
+    return "<div style='display:grid;place-content:center;background-color:red;color:white;width: 100vw;height:100vh;'><h1 style='font-weight:bold;text-align:center;'>Olá, Lucas Fischer!</h1></br><a style='background-color: white;padding: 10px;color:black;border-radius: 15px; text-align-center;' href='/'>Voltar à página inicial</a>"
