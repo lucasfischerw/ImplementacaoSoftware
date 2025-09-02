@@ -1,4 +1,4 @@
-#!/Users/lucasfischer/Desktop/ImplementacaoSoftware/venv/bin/python3
+#!/Users/lucasfischer/Documents/GitHub/ImplementacaoSoftware/venv/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
